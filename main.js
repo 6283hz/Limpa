@@ -30,4 +30,4 @@ client.on('interactionCreate', interaction => {
 })
 
 // Log in to Discord with your client's token
-client.login(TOKEN);
+client.login(process.env.TOKEN);
