@@ -1,5 +1,4 @@
 const { Client, Events, EmbedBuilder, GatewayIntentBits } = require('discord.js');
-const { token, client_id, guild_id } = require('./config.json');
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds,
