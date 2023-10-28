@@ -16,18 +16,16 @@ client.once(Events.ClientReady, c => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
 });
 
-client.on('messageCreate', msg => {
-    
-})
+// client.on('messageCreate', msg => {})
 
-client.on('interactionCreate', interaction => {
+client.on('interactionCreate', async interaction => {
     if(!interaction.isChatInputCommand) return
     if(interaction.commandName === 'discord'){
         interaction.reply({embeds: [exampleEmbed]})
     }
 })
 
-client.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', async member => {
     console.log(`Joined member ${member.avatar}`)
 
     const roleId = "1164520060858142782"
