@@ -29,5 +29,14 @@ client.on('interactionCreate', interaction => {
     }
 })
 
+client.on('guildMemberAdd', member => {
+    const guild = member.guild
+
+    const roleId = "1164520060858142782"
+    const role = guild.cache.get(roleId)
+
+    member.roles.add(role)
+})
+
 // Log in to Discord with your client's token
 client.login(process.env.TOKEN);
