@@ -28,6 +28,8 @@ client.on('interactionCreate', interaction => {
 })
 
 client.on('guildMemberAdd', member => {
+    console.log(`Joined member ${member.avatar}`)
+
     const guild = member.guild
 
     const roleId = "1164520060858142782"
