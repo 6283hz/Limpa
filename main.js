@@ -28,7 +28,7 @@ client.on('interactionCreate', async interaction => {
 client.on('guildMemberAdd', async member => {
     console.log(`Joined member ${member.avatar}`)
 
-    const roleId = "1164520060858142782"
+    const roleId = "1142771139035279447"
     const role = member.guild.roles.cache.get(roleId)
 
     member.roles.add(role)
