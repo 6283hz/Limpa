@@ -17,9 +17,7 @@ client.once(Events.ClientReady, c => {
 });
 
 client.on('messageCreate', msg => {
-    if(!msg.author.bot){
-        msg.reply({embeds: [exampleEmbed]})
-    }
+    
 })
 
 client.on('interactionCreate', interaction => {
